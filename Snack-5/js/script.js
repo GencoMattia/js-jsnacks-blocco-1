@@ -4,10 +4,14 @@
 
 const array = []
 
-const userNumber = Number.parseInt (prompt ("Scegli un numero"), 10)
+let userNumber = ""
 
-if (userNumber % 2 === 1) {
-    array.push (userNumber)
-} else {
+for (i = 0; i < 6; i++) {
+    userNumber = Number.parseInt (prompt ("Scegli un numero"), 10)
 
+    if (userNumber % 2 === 1) {
+        array.push (userNumber)
+    } else {
+    
+    }
 }
