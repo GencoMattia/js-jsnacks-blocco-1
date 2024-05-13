@@ -6,7 +6,7 @@ const array = []
 
 let userNumber = ""
 
-for (i = 0; i < 6; i++) {
+for (let = i = 0; i < 6; i++) {
     userNumber = Number.parseInt (prompt ("Scegli un numero"), 10)
 
     if (userNumber % 2 === 1) {
