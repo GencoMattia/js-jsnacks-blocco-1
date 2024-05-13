@@ -2,7 +2,7 @@
 
 const partyAttendantsList = ["Giangiorgio", "Pierluigi", "Annamaria", "Benedettamarcella", "Marialuigia"];
 
-const userName = prompt ("Inserisci il tuo nome");
+let userName = prompt ("Inserisci il tuo nome");
 userName = userName.charAt(0).toUpperCase() + userName.substring(1, userName.length).toLowerCase();
 
 if (partyAttendantsList.includes(userName) === true) {
