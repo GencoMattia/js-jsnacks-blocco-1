@@ -19,9 +19,9 @@ for (let i = 0; i < 50; i++) {
 
 console.log (numbers);
 
-for (let k = 1; k < numbers; k++) {
+for (let index = 1; index < numbers; index++) {
     const newElement = document.createElement ("p");
-    newElement.append (numbers[k]);
+    newElement.append (numbers[index]);
     if (numbers[index] % 2 === 0) {
         textGreen.appendChild (newElement);
     } else if (numbers[index] % 2 === 1) {
