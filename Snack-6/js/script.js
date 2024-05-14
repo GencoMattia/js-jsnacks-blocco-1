@@ -14,12 +14,12 @@ let somma = 0;
 for (let i = 1; i <= 50; i++) {
     array.push (i);
 
-    console.log (array)
+    console.log (array);
 }
 
 for ( let index = 0; index < array.length; index++) {
     if (index % 2 === 1) {
-        somma += array [index]
+        somma += array [index];
     }
 }
 
