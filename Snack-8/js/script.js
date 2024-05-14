@@ -1,9 +1,14 @@
 // Crea due tag div con due id diversi. Un div avrà il testo colorato di rosso mentre l'altro di verde. Partendo da un array di numeri, stampiamo nell'id rosso i numeri dispari e in verde i numeri pari.
 
 let textRed = document.createElement ("div");
+textRed.classList.add ("font-red");
 
-let container = document.querySelector ("div.container");
-console.log (container);
+let textGreen = document.createElement ("div");
+textGreen.classList.add ("font-green");
+
+
+let containerEl = document.querySelector ("div.container");
+console.log (containerEl);
 
 
 let numbers = [];
@@ -15,9 +20,14 @@ for (let i = 0; i < 50; i++) {
 console.log (numbers);
 
 for (let k = 1; k < numbers; k++) {
-    if (k % 2 === 0) {
-        
-    } else if (k % 2 === 1) {
-
+    const newElement = document.createElement ("p");
+    newElement.append (numbers[k]);
+    if (numbers[index] % 2 === 0) {
+        textGreen.appendChild (newElement);
+    } else if (numbers[index] % 2 === 1) {
+        textRed.appendChild (newElement);
     }
 }
+
+containerEl.appendChild (textGreen);
+containerEl.appendChild (textRed);
